@@ -1,0 +1,74 @@
+[
+    {
+        "nid": "HP",
+        "name": "HP",
+        "maximum": 60,
+        "desc": "Hit points. The unit is removed from the battle if HP reaches 0.",
+        "position": "hidden",
+        "growth_colors": false
+    },
+    {
+        "nid": "STR",
+        "name": "Pow",
+        "maximum": 30,
+        "desc": "Power. The higher the number, the more damage you inflict.",
+        "position": "left",
+        "growth_colors": false
+    },
+    {
+        "nid": "SKL",
+        "name": "Dex",
+        "maximum": 30,
+        "desc": "Dexterity. Gain 5 Hit per point.",
+        "position": "left",
+        "growth_colors": false
+    },
+    {
+        "nid": "SPD",
+        "name": "Spd",
+        "maximum": 30,
+        "desc": "Speed. When 5 or more than opponent, perform a follow-up attack.",
+        "position": "left",
+        "growth_colors": false
+    },
+    {
+        "nid": "LCK",
+        "name": "Lck",
+        "maximum": 30,
+        "desc": "Luck. Gain 5 Dodge per point.",
+        "position": "right",
+        "growth_colors": false
+    },
+    {
+        "nid": "DEF",
+        "name": "Def",
+        "maximum": 30,
+        "desc": "Defense. Reduces damage from physical weapons.",
+        "position": "left",
+        "growth_colors": false
+    },
+    {
+        "nid": "RES",
+        "name": "Res",
+        "maximum": 30,
+        "desc": "Resistance. Reduces potency of enemy magic.",
+        "position": "left",
+        "growth_colors": false
+    },
+    {
+        "nid": "CON",
+        "name": "Con",
+        "maximum": 25,
+        "desc": "Constitution. Affects how well the unit can wield heavier weapons.",
+        "position": "right",
+        "growth_colors": false
+    },
+    {
+        "nid": "MOV",
+        "name": "Mov",
+        "maximum": 15,
+        "desc": "Movement. The distance you can move in one turn.",
+        "position": "right",
+        "growth_colors": false
+    }
+]

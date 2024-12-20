@@ -1,0 +1,328 @@
+[
+    {
+        "nid": "None",
+        "name": "None",
+        "desc": "No affinity",
+        "bonus": [],
+        "icon_nid": "",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Fire",
+        "name": "Fire",
+        "desc": "Burning passion is infectious. +2 Damage Dealt per rank.",
+        "bonus": [
+            {
+                "support_rank": "C",
+                "damage": 2.0,
+                "resist": 0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0,
+                "attack_speed": 0,
+                "defense_speed": 0
+            },
+            {
+                "support_rank": "B",
+                "damage": 4.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "A",
+                "damage": 6.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "AffinityAndRank",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Thunder",
+        "name": "Thunder",
+        "desc": "Joy sparks a burst of motivation. +10 Critical Chance per rank.",
+        "bonus": [
+            {
+                "support_rank": "C",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 10.0,
+                "dodge": 0.0,
+                "attack_speed": 0,
+                "defense_speed": 0
+            },
+            {
+                "support_rank": "B",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 20.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "A",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 30.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "AffinityAndRank",
+        "icon_index": [
+            1,
+            0
+        ]
+    },
+    {
+        "nid": "Wind",
+        "name": "Wind",
+        "desc": "The ability to adapt is key to survival. +2 Attack/Defense Speed per rank.",
+        "bonus": [
+            {
+                "support_rank": "C",
+                "damage": 0.0,
+                "resist": 0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 2.0,
+                "defense_speed": 2.0
+            },
+            {
+                "support_rank": "B",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 4.0,
+                "defense_speed": 4.0
+            },
+            {
+                "support_rank": "A",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 6.0,
+                "defense_speed": 6.0
+            }
+        ],
+        "icon_nid": "AffinityAndRank",
+        "icon_index": [
+            3,
+            0
+        ]
+    },
+    {
+        "nid": "Ice",
+        "name": "Ice",
+        "desc": "Calm allows for greater perception. -2 Damage Recieved per rank.",
+        "bonus": [
+            {
+                "support_rank": "C",
+                "damage": 0.0,
+                "resist": 2.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "B",
+                "damage": 0.0,
+                "resist": 4.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "A",
+                "damage": 0.0,
+                "resist": 6.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "AffinityAndRank",
+        "icon_index": [
+            2,
+            0
+        ]
+    },
+    {
+        "nid": "Dark",
+        "name": "Dark",
+        "desc": "Pessimism may find hidden truths. +10 Avoid per rank.",
+        "bonus": [
+            {
+                "support_rank": "C",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 10.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "B",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 20.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "A",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 30.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "AffinityAndRank",
+        "icon_index": [
+            6,
+            0
+        ]
+    },
+    {
+        "nid": "Light",
+        "name": "Light",
+        "desc": "Kindess begets kindness. +10 Dodge per rank.",
+        "bonus": [
+            {
+                "support_rank": "C",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 10.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "B",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 20.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "A",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 0.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 30.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "AffinityAndRank",
+        "icon_index": [
+            7,
+            0
+        ]
+    },
+    {
+        "nid": "Earth",
+        "name": "Earth",
+        "desc": "Connections ground us. +10 Hit per rank.",
+        "bonus": [
+            {
+                "support_rank": "C",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 10.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "B",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 20.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            },
+            {
+                "support_rank": "A",
+                "damage": 0.0,
+                "resist": 0.0,
+                "accuracy": 30.0,
+                "avoid": 0.0,
+                "crit": 0.0,
+                "dodge": 0.0,
+                "attack_speed": 0.0,
+                "defense_speed": 0.0
+            }
+        ],
+        "icon_nid": "AffinityAndRank",
+        "icon_index": [
+            4,
+            0
+        ]
+    }
+]

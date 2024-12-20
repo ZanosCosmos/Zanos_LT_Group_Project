@@ -1,0 +1,42 @@
+[
+    {
+        "nid": "Trianimus",
+        "name": "Trianimus",
+        "desc": "The powerful central empire who subjegates all who resist.",
+        "icon_nid": "KnightEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Bandits",
+        "name": "Bandits",
+        "desc": "Pillagers who steal and destroy as they see fit.",
+        "icon_nid": "BanditEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Wall",
+        "name": "Wall",
+        "desc": "",
+        "icon_nid": "BlankEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    },
+    {
+        "nid": "Monster",
+        "name": "Monster",
+        "desc": "A grotesque creature created by magic and born in darkness.",
+        "icon_nid": "MonsterEmblem",
+        "icon_index": [
+            0,
+            0
+        ]
+    }
+]
