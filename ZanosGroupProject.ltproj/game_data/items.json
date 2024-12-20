@@ -5452,7 +5452,7 @@
             ],
             [
                 "weapon_rank",
-                "E"
+                "D"
             ],
             [
                 "map_hit_add_blend",
@@ -10639,6 +10639,30 @@
         ]
     },
     {
+        "nid": "Summon_Soldier",
+        "name": "Summon",
+        "desc": "Summons soldiers.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            9,
+            0
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "event_on_hit",
+                "Global Summon Soldiers"
+            ],
+            [
+                "target_ally",
+                null
+            ]
+        ]
+    },
+    {
         "nid": "HealingGazeAbility",
         "name": "<yellow>Healing Gaze <red>(1WP)",
         "desc": "Restores (Resistance*2)HP.",
@@ -10918,6 +10942,50 @@
         ]
     },
     {
+        "nid": "Smackdown",
+        "name": "Smackdown <red>(10WP)",
+        "desc": "Cannot perform follow-up attacks. Always inflicts Break.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            11,
+            38
+        ],
+        "components": [
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "damage",
+                0
+            ],
+            [
+                "weight",
+                0
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "no_double",
+                null
+            ],
+            [
+                "status_on_hit",
+                "Broken"
+            ]
+        ]
+    },
+    {
         "nid": "NoCounter",
         "name": "NoCounter",
         "desc": "",
@@ -11011,30 +11079,6 @@
                     "show_effectiveness_flash": true,
                     "weapon_effectiveness_multiplied": true
                 }
-            ]
-        ]
-    },
-    {
-        "nid": "Summon_Soldier",
-        "name": "Summon",
-        "desc": "Summons soldiers.",
-        "icon_nid": "Skills",
-        "icon_index": [
-            9,
-            0
-        ],
-        "components": [
-            [
-                "spell",
-                null
-            ],
-            [
-                "event_on_hit",
-                "Global Summon Soldiers"
-            ],
-            [
-                "target_ally",
-                null
             ]
         ]
     },
@@ -12161,7 +12205,7 @@
         ]
     },
     {
-        "nid": "MultiTatty",
+        "nid": "MultiArtemis",
         "name": "Gear",
         "desc": "Durability resets between chapters.",
         "icon_nid": null,
@@ -12173,10 +12217,10 @@
             [
                 "multi_item",
                 [
+                    "Iron_Lance",
+                    "Iron_Axe",
                     "Iron_Bow",
-                    "Iron_Sword",
-                    "Swift_Bow_Inherit",
-                    "Shield_Sword_Inherit"
+                    "Longbow_Inherit"
                 ]
             ],
             [
@@ -12211,6 +12255,31 @@
         ]
     },
     {
+        "nid": "MultiTatty",
+        "name": "Gear",
+        "desc": "Durability resets between chapters.",
+        "icon_nid": null,
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "multi_item",
+                [
+                    "Iron_Bow",
+                    "Iron_Sword",
+                    "Swift_Bow_Inherit",
+                    "Shield_Sword_Inherit"
+                ]
+            ],
+            [
+                "locked",
+                null
+            ]
+        ]
+    },
+    {
         "nid": "MultiElm",
         "name": "Gear",
         "desc": "Durability resets between chapters.",
@@ -12227,6 +12296,29 @@
                     "SevenSword",
                     "Iron_Bow",
                     "Longbow_Inherit"
+                ]
+            ],
+            [
+                "locked",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "MultiTest",
+        "name": "Gear",
+        "desc": "Durability resets between chapters.",
+        "icon_nid": null,
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "multi_item",
+                [
+                    "Iron_Dagger",
+                    "Heal"
                 ]
             ],
             [

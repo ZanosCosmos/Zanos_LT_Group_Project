@@ -63,7 +63,6 @@
     "Armor",
     "SwordCav",
     "LanceCav",
-    "AxeCav",
     "Cleric",
     "Priest",
     "Fighter",
@@ -81,5 +80,7 @@
     "Nomad",
     "Wolfkin",
     "WolfkinFemale",
-    "Bard"
+    "Bard",
+    "AxeCavalierUnused",
+    "AxeCavalier"
 ]

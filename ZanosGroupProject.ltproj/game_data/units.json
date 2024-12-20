@@ -244,7 +244,7 @@
         "nid": "Miyabi",
         "name": "Miyabi",
         "desc": "A serious woman from Aristella who will do anything for her sister.",
-        "variant": null,
+        "variant": "",
         "level": 3,
         "klass": "SpearfighterF",
         "tags": [],
@@ -363,7 +363,7 @@
         "nid": "Terry",
         "name": "Terry",
         "desc": "A villager from Outreach Village with an obsession with safety.",
-        "variant": null,
+        "variant": "Terry",
         "level": 4,
         "klass": "AxeCavalier",
         "tags": [],
@@ -544,7 +544,7 @@
         "learned_skills": [
             [
                 1,
-                "FarmerAtHeart"
+                "Smackdown"
             ]
         ],
         "unit_notes": [],
@@ -1069,6 +1069,121 @@
         "fields": []
     },
     {
+        "nid": "Artemis",
+        "name": "Artemis",
+        "desc": "A young mage of Renais. She believes she is a prodigy.",
+        "variant": "Female",
+        "level": 1,
+        "klass": "Knight",
+        "tags": [],
+        "bases": {
+            "HP": 20,
+            "STR": 6,
+            "SKL": 3,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 9,
+            "RES": 1,
+            "CON": 13,
+            "MOV": 4
+        },
+        "growths": {
+            "HP": 80,
+            "STR": 40,
+            "SKL": 30,
+            "SPD": 15,
+            "LCK": 25,
+            "DEF": 28,
+            "RES": 20,
+            "CON": 0,
+            "MOV": 0
+        },
+        "stat_cap_modifiers": {
+            "STR": 0,
+            "SKL": 0,
+            "RES": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "CON": 0,
+            "SPD": 0,
+            "MOV": 0,
+            "HP": 0
+        },
+        "starting_items": [
+            [
+                "MultiArtemis",
+                false
+            ],
+            [
+                "Steel_Lance",
+                false
+            ]
+        ],
+        "learned_skills": [
+            [
+                1,
+                "ArcherSoul"
+            ]
+        ],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                0,
+                251
+            ],
+            "Lance": [
+                false,
+                31,
+                251
+            ],
+            "Axe": [
+                false,
+                31,
+                251
+            ],
+            "Bow": [
+                false,
+                1,
+                251
+            ],
+            "Staff": [
+                false,
+                0,
+                251
+            ],
+            "Light": [
+                false,
+                0,
+                251
+            ],
+            "Anima": [
+                true,
+                71,
+                251
+            ],
+            "Dark": [
+                false,
+                0,
+                251
+            ],
+            "Default": [
+                false,
+                0,
+                251
+            ],
+            "Tome": [
+                true,
+                71,
+                251
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "Lute",
+        "affinity": "Earth",
+        "fields": []
+    },
+    {
         "nid": "Neimi",
         "name": "Neimi",
         "desc": "A childhood friend of Colm who hails from Renais. She cries a lot.",
@@ -1400,112 +1515,6 @@
         "alternate_classes": [],
         "portrait_nid": "Colm",
         "affinity": "Light",
-        "fields": []
-    },
-    {
-        "nid": "Lute",
-        "name": "Lute",
-        "desc": "A young mage of Renais. She believes she is a prodigy.",
-        "variant": "Female",
-        "level": 1,
-        "klass": "Mage",
-        "tags": [],
-        "bases": {
-            "HP": 17,
-            "STR": 0,
-            "SKL": 6,
-            "SPD": 7,
-            "LCK": 8,
-            "DEF": 3,
-            "RES": 5,
-            "CON": 3,
-            "MOV": 5
-        },
-        "growths": {
-            "HP": 45,
-            "STR": 0,
-            "SKL": 30,
-            "SPD": 45,
-            "LCK": 45,
-            "DEF": 15,
-            "RES": 40,
-            "CON": 0,
-            "MOV": 0
-        },
-        "stat_cap_modifiers": {
-            "STR": 0,
-            "SKL": 0,
-            "RES": 0,
-            "LCK": 0,
-            "DEF": 0,
-            "CON": 0,
-            "SPD": 0,
-            "MOV": 0,
-            "HP": 0
-        },
-        "starting_items": [
-            [
-                "Fire",
-                false
-            ]
-        ],
-        "learned_skills": [],
-        "unit_notes": [],
-        "wexp_gain": {
-            "Sword": [
-                false,
-                0,
-                251
-            ],
-            "Lance": [
-                false,
-                0,
-                251
-            ],
-            "Axe": [
-                false,
-                0,
-                251
-            ],
-            "Bow": [
-                false,
-                0,
-                251
-            ],
-            "Staff": [
-                false,
-                0,
-                251
-            ],
-            "Light": [
-                false,
-                0,
-                251
-            ],
-            "Anima": [
-                true,
-                71,
-                251
-            ],
-            "Dark": [
-                false,
-                0,
-                251
-            ],
-            "Default": [
-                false,
-                0,
-                251
-            ],
-            "Tome": [
-                true,
-                71,
-                251
-            ]
-        },
-        "alternate_classes": [],
-        "portrait_nid": "Lute",
-        "affinity": "Earth",
         "fields": []
     },
     {
@@ -2298,9 +2307,9 @@
         "nid": "Innes",
         "name": "Innes",
         "desc": "The prince of Frelia. He\u2019s brash and arrogant, but good at heart.",
-        "variant": null,
+        "variant": "",
         "level": 1,
-        "klass": "Sniper",
+        "klass": "Rogue",
         "tags": [],
         "bases": {
             "HP": 31,
@@ -2337,7 +2346,7 @@
         },
         "starting_items": [
             [
-                "Silver_Bow",
+                "MultiTest",
                 false
             ],
             [
@@ -2369,12 +2378,12 @@
             ],
             "Bow": [
                 true,
-                181,
+                0,
                 251
             ],
             "Staff": [
                 false,
-                0,
+                31,
                 251
             ],
             "Light": [
@@ -2401,6 +2410,11 @@
                 false,
                 0,
                 251
+            ],
+            "Knife": [
+                false,
+                71,
+                null
             ]
         },
         "alternate_classes": [],

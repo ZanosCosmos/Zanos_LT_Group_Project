@@ -2824,9 +2824,7 @@
         "movement_group": "Light Foot",
         "promotes_from": "Thief",
         "turns_into": [],
-        "tags": [
-            "Sword"
-        ],
+        "tags": [],
         "max_level": 20,
         "bases": {
             "HP": 16,
@@ -2886,8 +2884,8 @@
         "learned_skills": [],
         "wexp_gain": {
             "Sword": [
-                2,
-                1,
+                false,
+                0,
                 251
             ],
             "Lance": [
@@ -2906,8 +2904,8 @@
                 251
             ],
             "Knife": [
-                false,
-                0,
+                true,
+                71,
                 null
             ],
             "Tome": [
@@ -2916,8 +2914,8 @@
                 251
             ],
             "Staff": [
-                false,
-                0,
+                true,
+                31,
                 251
             ],
             "Default": [
@@ -3943,7 +3941,7 @@
             0,
             0
         ],
-        "map_sprite_nid": "AxeCav",
+        "map_sprite_nid": "AxeCavalier",
         "combat_anim_nid": "CavalierM",
         "fields": []
     },
@@ -6551,9 +6549,24 @@
                 0,
                 251
             ],
+            "Knife": [
+                false,
+                0,
+                null
+            ],
+            "Tome": [
+                true,
+                71,
+                251
+            ],
             "Staff": [
                 2,
                 31,
+                251
+            ],
+            "Default": [
+                false,
+                0,
                 251
             ],
             "Light": [
@@ -6569,16 +6582,6 @@
             "Dark": [
                 false,
                 0,
-                251
-            ],
-            "Default": [
-                false,
-                0,
-                251
-            ],
-            "Tome": [
-                true,
-                71,
                 251
             ]
         },

@@ -500,6 +500,26 @@
                         20
                     ]
                 }
+            },
+            {
+                "nid": "Turn1",
+                "units": [
+                    "Terry",
+                    "Tatty",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12"
+                ],
+                "positions": {}
             }
         ],
         "ai_groups": []
@@ -2851,7 +2871,7 @@
                 "generic": false
             },
             {
-                "nid": "Lute",
+                "nid": "Artemis",
                 "team": "other",
                 "ai": "None",
                 "roam_ai": null,
@@ -5000,6 +5020,19 @@
                 ],
                 "starting_traveler": null,
                 "generic": true
+            },
+            {
+                "nid": "Innes",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    10,
+                    8
+                ],
+                "starting_traveler": null,
+                "generic": false
             }
         ],
         "regions": [
