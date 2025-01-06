@@ -1,0 +1,82 @@
+[
+    {
+        "nid": "HP",
+        "name": "HP",
+        "maximum": 60,
+        "desc": "Hit points. The unit is removed from the battle if HP reaches 0.",
+        "position": "hidden",
+        "growth_colors": false
+    },
+    {
+        "nid": "STR",
+        "name": "Pow",
+        "maximum": 30,
+        "desc": "Power. The higher the number, the more damage you inflict.",
+        "position": "left",
+        "growth_colors": false
+    },
+    {
+        "nid": "SKL",
+        "name": "Dex",
+        "maximum": 30,
+        "desc": "Dexterity. Every point gives 5 Hit.",
+        "position": "left",
+        "growth_colors": false
+    },
+    {
+        "nid": "SPD",
+        "name": "Spd",
+        "maximum": 30,
+        "desc": "If 4 or more than opponent, trigger a follow-up attack.",
+        "position": "left",
+        "growth_colors": false
+    },
+    {
+        "nid": "LCK",
+        "name": "Lck",
+        "maximum": 30,
+        "desc": "Luck. Every point gives 5 Avoid/Dodge.",
+        "position": "left",
+        "growth_colors": false
+    },
+    {
+        "nid": "DEF",
+        "name": "Def",
+        "maximum": 30,
+        "desc": "Defense. Reduces damage from physical weapons.",
+        "position": "left",
+        "growth_colors": false
+    },
+    {
+        "nid": "RES",
+        "name": "Res",
+        "maximum": 30,
+        "desc": "Resistance: Lowers the potency of incoming spells.",
+        "position": "left",
+        "growth_colors": false
+    },
+    {
+        "nid": "TEC",
+        "name": "Tec",
+        "maximum": 30,
+        "desc": "Technique. Every point gives 5 Critical Chance.",
+        "position": "right",
+        "growth_colors": false
+    },
+    {
+        "nid": "CON",
+        "name": "Con",
+        "maximum": 25,
+        "desc": "Constitution. Affects how well the unit can wield heavier weapons.",
+        "position": "right",
+        "growth_colors": false
+    },
+    {
+        "nid": "MOV",
+        "name": "Mov",
+        "maximum": 15,
+        "desc": "Movement. The distance you can move in one turn.",
+        "position": "right",
+        "growth_colors": false
+    }
+]
