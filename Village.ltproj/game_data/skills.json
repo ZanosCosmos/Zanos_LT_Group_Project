@@ -1,0 +1,1770 @@
+[
+    {
+        "nid": "Canto",
+        "name": "Canto",
+        "desc": "Can move again after certain actions.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "canto",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Canter",
+        "name": "Canter",
+        "desc": "",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            0,
+            32
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "canter",
+                2
+            ]
+        ]
+    },
+    {
+        "nid": "Flying",
+        "name": "Flying",
+        "desc": "Can fly.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            10
+        ],
+        "components": [
+            [
+                "ignore_terrain",
+                null
+            ],
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ResistPlus",
+        "name": "Resist+",
+        "desc": "Grants additional RES.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "RES",
+                        7
+                    ]
+                ]
+            ],
+            [
+                "time",
+                7
+            ],
+            [
+                "upkeep_stat_change",
+                [
+                    [
+                        "RES",
+                        -1
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Anticrit",
+        "name": "Anticrit",
+        "desc": "Grants immunity to critical hits.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            10,
+            3
+        ],
+        "components": [
+            [
+                "crit_avoid",
+                1000
+            ]
+        ]
+    },
+    {
+        "nid": "Stunned",
+        "name": "Stunned",
+        "desc": "Unit cannot act.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            8
+        ],
+        "components": [
+            [
+                "time",
+                2
+            ],
+            [
+                "unselectable",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "MOV",
+                        -99
+                    ]
+                ]
+            ],
+            [
+                "cannot_use_items",
+                null
+            ],
+            [
+                "negative",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Rescue",
+        "name": "Rescue",
+        "desc": "Unit is weighed down with a traveler.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_multiplier",
+                [
+                    [
+                        "SKL",
+                        0.5
+                    ],
+                    [
+                        "SPD",
+                        0.5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Silence",
+        "name": "Silence",
+        "desc": "Unit cannot use magic.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            9,
+            3
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "cannot_use_magic_items",
+                null
+            ],
+            [
+                "time",
+                5
+            ]
+        ]
+    },
+    {
+        "nid": "Berserk",
+        "name": "Berserk",
+        "desc": "Unit is confused and can no longer tell friend from foe.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            10,
+            8
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "time",
+                5
+            ],
+            [
+                "ignore_alliances",
+                null
+            ],
+            [
+                "unselectable",
+                null
+            ],
+            [
+                "change_ai",
+                "Pursue"
+            ]
+        ]
+    },
+    {
+        "nid": "Poisoned",
+        "name": "Poisoned",
+        "desc": "Inflicts -2 to all stats.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            3,
+            4
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "time",
+                6
+            ],
+            [
+                "gba_poison",
+                5
+            ]
+        ]
+    },
+    {
+        "nid": "Void_Curse",
+        "name": "Void Curse",
+        "desc": "No exp gained for attacking this unit.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            10,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "enemy_exp_multiplier",
+                0
+            ]
+        ]
+    },
+    {
+        "nid": "GenericBoss",
+        "name": "GenericBoss",
+        "desc": "",
+        "icon_nid": null,
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "has_tags",
+                [
+                    "Boss"
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "CurvedShot_Enemy",
+        "name": "Curved Shot <red>(5WP)",
+        "desc": "Increases the maximum range of Bows by 1.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            4,
+            39
+        ],
+        "components": [
+            [
+                "modify_maximum_range",
+                1
+            ],
+            [
+                "condition",
+                "unit.get_mana() > 4"
+            ],
+            [
+                "gain_mana",
+                "-5"
+            ],
+            [
+                "hidden",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "DartingBlow",
+        "name": "Darting Blow",
+        "desc": "When initiating combat, gain +5 Speed.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            3,
+            18
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_condition",
+                "mode == \"attack\""
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "SPD",
+                        5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "CertainBlow",
+        "name": "Certain Blow",
+        "desc": "When initiating combat, gain +40 Hit.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            6,
+            18
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_condition",
+                "mode == \"attack\""
+            ],
+            [
+                "hit",
+                40
+            ]
+        ]
+    },
+    {
+        "nid": "StrongRiposte",
+        "name": "Strong Riposte",
+        "desc": "When counterattacking, deal +3 True Damage.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            3,
+            39
+        ],
+        "components": [
+            [
+                "damage",
+                3
+            ],
+            [
+                "combat_condition",
+                "mode == \"defend\""
+            ],
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ElbowRoom",
+        "name": "Elbow Room",
+        "desc": "Gain +2 Speed when on open terrain.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            1,
+            33
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "condition",
+                "game.tilemap.get_terrain(unit.position) in ('1', '6', 'Bridge')"
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "SPD",
+                        2
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Locktouch",
+        "name": "Locktouch",
+        "desc": "Unit can opened locks without a key.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            0
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "locktouch",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "FieryBlood",
+        "name": "Fiery Blood",
+        "desc": "When HP is not full, receive +4 Power.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            12,
+            42
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "condition",
+                "unit.get_hp() < unit.get_max_hp()"
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        4
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Vantage",
+        "name": "Vantage",
+        "desc": "Always act first, even when counterattacking.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            6,
+            32
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "vantage",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "BowRange",
+        "name": "Bow Range +1",
+        "desc": "Maximum range of bows increased by 1.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            8,
+            29
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "modify_maximum_range",
+                1
+            ]
+        ]
+    },
+    {
+        "nid": "FirstAid",
+        "name": "First Aid <red>(5WP)",
+        "desc": "As a free action, heal 10 HP to an adjacent ally.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            6,
+            0
+        ],
+        "components": [
+            [
+                "ability",
+                "FirstAidItem"
+            ],
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Shove",
+        "name": "Shove",
+        "desc": "",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            3,
+            51
+        ],
+        "components": [
+            [
+                "ability",
+                "ShoveItem"
+            ],
+            [
+                "hidden",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Forager",
+        "name": "Forager",
+        "desc": "Use while in Plains or Forests to gain Herbs. Recharges fully every chapter.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            12,
+            43
+        ],
+        "components": [
+            [
+                "drain_charge",
+                3
+            ],
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "ability",
+                "Forage"
+            ],
+            [
+                "condition",
+                "game.tilemap.get_terrain(unit.position) in ('1', '2', '3')"
+            ]
+        ]
+    },
+    {
+        "nid": "BoxingBackground",
+        "name": "Boxing Background",
+        "desc": "Can attack using Fist. This grants a permanent +1 Defense if it kills.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            0,
+            34
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "ability",
+                "Fist"
+            ]
+        ]
+    },
+    {
+        "nid": "BoxingBackground_Effect",
+        "name": "Boxing Background",
+        "desc": "",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            0,
+            34
+        ],
+        "components": [
+            [
+                "gain_skill_after_kill",
+                "BoxingBackground_Child"
+            ],
+            [
+                "hidden",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "BoxingBackground_Child",
+        "name": "Boxing Background",
+        "desc": "Can attack using Fist. This grants a permanent Defense+1 if it kills.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            0,
+            34
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        1
+                    ]
+                ]
+            ],
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stack",
+                30
+            ]
+        ]
+    },
+    {
+        "nid": "InscribeSkill",
+        "name": "Inscribe",
+        "desc": "This unit can apply Sigils, effects that last until chapter end.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            11,
+            46
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "ability",
+                "SigilList"
+            ]
+        ]
+    },
+    {
+        "nid": "InscribeSprinter",
+        "name": "Sprinter",
+        "desc": "Move 2 spaces after any action.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            11,
+            46
+        ],
+        "components": [
+            [
+                "lost_on_end_chapter",
+                null
+            ],
+            [
+                "canter",
+                2
+            ]
+        ]
+    },
+    {
+        "nid": "InscribeQuills",
+        "name": "Quills",
+        "desc": "Counters from any range.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            11,
+            46
+        ],
+        "components": [
+            [
+                "lost_on_end_chapter",
+                null
+            ],
+            [
+                "distant_counter",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "InscribeLeader",
+        "name": "Leader",
+        "desc": "Adjacent allies receive Power/Dexterity+2.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            11,
+            46
+        ],
+        "components": [
+            [
+                "lost_on_end_chapter",
+                null
+            ],
+            [
+                "aura",
+                "InscribeLeader_Child"
+            ],
+            [
+                "aura_range",
+                1
+            ],
+            [
+                "aura_target",
+                "ally"
+            ]
+        ]
+    },
+    {
+        "nid": "InscribeLeader_Child",
+        "name": "Leader",
+        "desc": "You shouldn't see this.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            11,
+            46
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        2
+                    ],
+                    [
+                        "SKL",
+                        2
+                    ]
+                ]
+            ],
+            [
+                "hidden",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "InscribeStinky",
+        "name": "Stinky",
+        "desc": "Adjacent enemies receive Power/Dexterity-2.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            11,
+            46
+        ],
+        "components": [
+            [
+                "lost_on_end_chapter",
+                null
+            ],
+            [
+                "aura",
+                "InscribeLeader_Child"
+            ],
+            [
+                "aura_range",
+                1
+            ],
+            [
+                "aura_target",
+                "enemy"
+            ]
+        ]
+    },
+    {
+        "nid": "InscribeStinky_Child",
+        "name": "Stinky",
+        "desc": "You shouldn't see this.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            11,
+            46
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        -2
+                    ],
+                    [
+                        "SKL",
+                        -2
+                    ]
+                ]
+            ],
+            [
+                "hidden",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "InscribeFlight",
+        "name": "Airborne",
+        "desc": "Is treated as Flying.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            11,
+            46
+        ],
+        "components": [
+            [
+                "lost_on_end_chapter",
+                null
+            ],
+            [
+                "has_tags",
+                [
+                    "Flying"
+                ]
+            ],
+            [
+                "movement_type",
+                "Fliers"
+            ]
+        ]
+    },
+    {
+        "nid": "InscribeUnkillable",
+        "name": "Unkillable",
+        "desc": "When HP reaches 0, instead revive at 1 HP.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            11,
+            46
+        ],
+        "components": [
+            [
+                "lost_on_end_chapter",
+                null
+            ],
+            [
+                "drain_charge",
+                1
+            ],
+            [
+                "miracle",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "InscribeDoubleStrike",
+        "name": "Double Strike",
+        "desc": "Attack an additional time.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            11,
+            46
+        ],
+        "components": [
+            [
+                "lost_on_end_chapter",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Instructor",
+        "name": "Instructor",
+        "desc": "Adjacent allies gain 1.5x EXP.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            5,
+            52
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "aura",
+                "Instructor_Child"
+            ],
+            [
+                "aura_range",
+                1
+            ],
+            [
+                "aura_target",
+                "ally"
+            ],
+            [
+                "hide_aura",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Instructor_Child",
+        "name": "Instructor",
+        "desc": "1.5x EXP gain.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            5,
+            52
+        ],
+        "components": [
+            [
+                "exp_multiplier",
+                1.5
+            ]
+        ]
+    },
+    {
+        "nid": "Solidarity",
+        "name": "Solidarity",
+        "desc": "Adjacent allies receives +10 Critical Chance and Critical Avoid.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            1,
+            45
+        ],
+        "components": [
+            [
+                "aura",
+                "Solidarity_Child"
+            ],
+            [
+                "aura_range",
+                1
+            ],
+            [
+                "aura_target",
+                "ally"
+            ],
+            [
+                "hide_aura",
+                null
+            ],
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Solidarity_Child",
+        "name": "Solidarity",
+        "desc": "Adjacent allies receives +10 Critical Chance and Critical Avoid.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            1,
+            45
+        ],
+        "components": [
+            [
+                "crit",
+                10
+            ],
+            [
+                "crit_avoid",
+                10
+            ]
+        ]
+    },
+    {
+        "nid": "ManaAura",
+        "name": "Mana Aura",
+        "desc": "Enemies within 2 spaces suffer -2 Resistance.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            9,
+            37
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "aura",
+                "ManaAura_Child"
+            ],
+            [
+                "aura_range",
+                2
+            ],
+            [
+                "aura_target",
+                "enemy"
+            ],
+            [
+                "hide_aura",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ManaAura_Child",
+        "name": "Mana Aura",
+        "desc": "",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            9,
+            37
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "RES",
+                        -2
+                    ]
+                ]
+            ],
+            [
+                "negative",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Lunge",
+        "name": "Lunge <red>(5WP)",
+        "desc": "Swap places with your target.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            8,
+            35
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_art",
+                "Lunge_Child"
+            ],
+            [
+                "cost_mana",
+                5
+            ]
+        ]
+    },
+    {
+        "nid": "Lunge_Child",
+        "name": "Lunge <red>(5WP)",
+        "desc": "Swap places with your target.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            8,
+            35
+        ],
+        "components": [
+            [
+                "item_override",
+                "SwapItemEnd"
+            ]
+        ]
+    },
+    {
+        "nid": "Beastbane",
+        "name": "Beastbane <red>(10WP)",
+        "desc": "Makes weapon effective against Beasts and Horses.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            15,
+            41
+        ],
+        "components": [
+            [
+                "combat_art",
+                "Beastbane_Child"
+            ],
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "cost_mana",
+                10
+            ]
+        ]
+    },
+    {
+        "nid": "Beastbane_Child",
+        "name": "Beastbane <red>(10WP)",
+        "desc": "Makes weapon effective against Beasts and Horses.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            15,
+            41
+        ],
+        "components": [
+            [
+                "item_override",
+                "BeastbaneItem"
+            ]
+        ]
+    },
+    {
+        "nid": "Challenge",
+        "name": "Challenge <red>(5WP)",
+        "desc": "Target becomes Challenged, doubling their damage dealt. However, their defeat gives 4x EXP/WXP.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            0,
+            44
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_art",
+                "Challenge_Child"
+            ],
+            [
+                "cost_mana",
+                5
+            ]
+        ]
+    },
+    {
+        "nid": "Challenge_Child",
+        "name": "Challenge <red>(5WP)",
+        "desc": "Target becomes Challenged, doubling their damage dealt. However, their defeat gives 4x EXP/WXP.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            0,
+            44
+        ],
+        "components": [
+            [
+                "give_status_after_combat",
+                "Challenged"
+            ]
+        ]
+    },
+    {
+        "nid": "Challenged",
+        "name": "Challenged",
+        "desc": "2X Damage Dealt. When defeated, opponent gains 4X the EXP/WXP.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            0,
+            44
+        ],
+        "components": [
+            [
+                "damage_multiplier",
+                2.0
+            ],
+            [
+                "enemy_exp_multiplier",
+                4.0
+            ],
+            [
+                "enemy_wexp_multiplier",
+                4.0
+            ]
+        ]
+    },
+    {
+        "nid": "CurvedShot",
+        "name": "Curved Shot <red>(5WP)",
+        "desc": "Increases the maximum range of Bows by 1.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            4,
+            39
+        ],
+        "components": [
+            [
+                "combat_art",
+                "CurvedShot_Effect"
+            ],
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "cost_mana",
+                5
+            ]
+        ]
+    },
+    {
+        "nid": "CurvedShot_Effect",
+        "name": "Curved Shot <red>(5WP)",
+        "desc": "Increases the maximum range of Bows by 1.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            4,
+            39
+        ],
+        "components": [
+            [
+                "modify_maximum_range",
+                1
+            ]
+        ]
+    },
+    {
+        "nid": "SealDefense",
+        "name": "Seal Defense <red>(10WP)",
+        "desc": "Target suffers -5 Defense for one turn.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            6,
+            15
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_art",
+                "SealDefense_Child"
+            ],
+            [
+                "cost_mana",
+                10
+            ],
+            [
+                "allowed_weapons",
+                "item_system.is_weapon(unit, item)"
+            ]
+        ]
+    },
+    {
+        "nid": "SealResistance",
+        "name": "Seal Resistance <red>(10WP)",
+        "desc": "Target suffers -5 Resistance for one turn.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            7,
+            15
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_art",
+                "SealResistance_Child"
+            ],
+            [
+                "cost_mana",
+                10
+            ]
+        ]
+    },
+    {
+        "nid": "SealDefense_Child",
+        "name": "Seal Defense <red>(10WP)",
+        "desc": "Target suffers -5 Defense for one turn.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            6,
+            15
+        ],
+        "components": [
+            [
+                "give_status_after_combat",
+                "SealDefenseDebuff"
+            ]
+        ]
+    },
+    {
+        "nid": "SealResistance_Child",
+        "name": "Seal Resistance <red>(10WP)",
+        "desc": "Target suffers -5 Resistance for one turn.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            7,
+            15
+        ],
+        "components": [
+            [
+                "give_status_after_combat",
+                "SealResistanceDebuff"
+            ]
+        ]
+    },
+    {
+        "nid": "SealDefenseDebuff",
+        "name": "Seal Defense",
+        "desc": "",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            6,
+            15
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "end_time",
+                1
+            ],
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        -5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "SealResistanceDebuff",
+        "name": "Seal Resistance",
+        "desc": "",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            7,
+            15
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "end_time",
+                1
+            ],
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "RES",
+                        -5
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Dragonstone",
+        "name": "Dragonstone",
+        "desc": "Grants STR +12, SKL +12, DEF +15, RES+20.",
+        "icon_nid": "Neutral",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        12
+                    ],
+                    [
+                        "SKL",
+                        12
+                    ],
+                    [
+                        "DEF",
+                        15
+                    ],
+                    [
+                        "RES",
+                        20
+                    ]
+                ]
+            ],
+            [
+                "hidden",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Devil_Luck",
+        "name": "Devil Luck",
+        "desc": "Skill gained by equipping the Devil Axe.\nReceives damage equal to damage dealt.",
+        "icon_nid": "Axe",
+        "icon_index": [
+            0,
+            8
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "resist_multiplier",
+                99.0
+            ],
+            [
+                "resist",
+                -999
+            ]
+        ]
+    },
+    {
+        "nid": "Eclipse_Helper",
+        "name": "Eclipse Helper",
+        "desc": "In order for enemies to use Eclipse, they must think they're inflicting a negative status or dealing damage.\nEclipse doesn't deal damage normally, so instead it secretly inflicts this status.",
+        "icon_nid": "Dark",
+        "icon_index": [
+            0,
+            3
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "lost_on_end_combat2",
+                {
+                    "lost_on_self": true,
+                    "lost_on_ally": true,
+                    "lost_on_enemy": true,
+                    "lost_on_splash": true
+                }
+            ]
+        ]
+    },
+    {
+        "nid": "Sword_Hit_Plus10",
+        "name": "Sword Hit +10",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            5,
+            6
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "hit",
+                10
+            ],
+            [
+                "condition",
+                "unit.get_weapon() and item_system.weapon_type(unit, unit.get_weapon()) == 'Sword'"
+            ]
+        ]
+    },
+    {
+        "nid": "WillpowerSystem",
+        "name": "WillpowerSystem",
+        "desc": "",
+        "icon_nid": null,
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "global",
+                null
+            ],
+            [
+                "mana_regeneration",
+                1
+            ],
+            [
+                "mana_on_kill",
+                2
+            ]
+        ]
+    },
+    {
+        "nid": "GreatShove",
+        "name": "GreatShove",
+        "desc": "",
+        "icon_nid": null,
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "item_override",
+                "ShoveFeature"
+            ],
+            [
+                "combat_condition",
+                "unit2.team not in ('player','other')"
+            ]
+        ]
+    },
+    {
+        "nid": "Fort",
+        "name": "Fort",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            2
+        ],
+        "components": [
+            [
+                "regeneration",
+                0.2
+            ],
+            [
+                "avoid",
+                20
+            ],
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        3
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Throne",
+        "name": "Throne",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            1,
+            2
+        ],
+        "components": [
+            [
+                "regeneration",
+                0.10000000000000002
+            ],
+            [
+                "avoid",
+                30
+            ],
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        3
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Forest",
+        "name": "Forest",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "avoid",
+                20
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        1
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Mountain",
+        "name": "Mountain",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "avoid",
+                30
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        1
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Peak",
+        "name": "Peak",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "avoid",
+                40
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        2
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Avoid10",
+        "name": "Avoid10",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "avoid",
+                10
+            ]
+        ]
+    },
+    {
+        "nid": "NoAvoid",
+        "name": "NoAvoid",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "avoid",
+                -1000
+            ],
+            [
+                "crit_avoid",
+                1000
+            ]
+        ]
+    },
+    {
+        "nid": "Avoid5",
+        "name": "Avoid5",
+        "desc": "",
+        "icon_nid": "Skills",
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "avoid",
+                5
+            ]
+        ]
+    }
+]
