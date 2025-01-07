@@ -10907,5 +10907,21 @@
                 "BoxingBackground_Effect"
             ]
         ]
+    },
+    {
+        "nid": "NoCounter",
+        "name": "NoCounter",
+        "desc": "",
+        "icon_nid": null,
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "cannot_counter",
+                null
+            ]
+        ]
     }
 ]

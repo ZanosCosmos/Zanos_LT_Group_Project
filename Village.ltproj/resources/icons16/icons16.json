@@ -74,5 +74,9 @@
     {
         "nid": "AffinityAndRank",
         "subicon_dict": {}
+    },
+    {
+        "nid": "ItemIcons3",
+        "subicon_dict": {}
     }
 ]

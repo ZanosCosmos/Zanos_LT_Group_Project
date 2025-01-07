@@ -256,6 +256,72 @@
         ]
     },
     {
+        "nid": "Broken",
+        "name": "Broken",
+        "desc": "Cannot counter or avoid in next combat.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            15,
+            33
+        ],
+        "components": [
+            [
+                "negative",
+                null
+            ],
+            [
+                "item_override",
+                "NoCounter"
+            ],
+            [
+                "lost_on_upkeep",
+                null
+            ],
+            [
+                "unit_flickering_tint",
+                [
+                    255,
+                    255,
+                    255
+                ]
+            ],
+            [
+                "avoid_formula_override",
+                "ZERO"
+            ],
+            [
+                "lost_on_end_next_combat",
+                [
+                    [
+                        "NumberOfCombats (X)",
+                        "2",
+                        "Number of combats before expiration"
+                    ],
+                    [
+                        "LostOnSelf (T/F)",
+                        "T",
+                        "Lost after self combat (e.g. vulnerary)"
+                    ],
+                    [
+                        "LostOnAlly (T/F)",
+                        "T",
+                        "Lost after combat with an ally"
+                    ],
+                    [
+                        "LostOnEnemy (T/F)",
+                        "T",
+                        "Lost after combat with an enemy"
+                    ],
+                    [
+                        "LostOnSplash (T/F)",
+                        "T",
+                        "Lost after combat if using an AOE item"
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
         "nid": "Void_Curse",
         "name": "Void Curse",
         "desc": "No exp gained for attacking this unit.",
@@ -517,6 +583,22 @@
             [
                 "modify_maximum_range",
                 1
+            ]
+        ]
+    },
+    {
+        "nid": "BreakImmune",
+        "name": "BreakImmune",
+        "desc": "Gives immunity to the Break mechanic, duh.",
+        "icon_nid": null,
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
             ]
         ]
     },
@@ -1501,7 +1583,7 @@
     {
         "nid": "WillpowerSystem",
         "name": "WillpowerSystem",
-        "desc": "",
+        "desc": "Makes Willpower regenerate correctly.",
         "icon_nid": null,
         "icon_index": [
             0,
@@ -1527,9 +1609,43 @@
         ]
     },
     {
+        "nid": "BreakSystem",
+        "name": "BreakSystem",
+        "desc": "Allows for breaking.",
+        "icon_nid": null,
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "global",
+                null
+            ],
+            [
+                "hidden",
+                null
+            ],
+            [
+                "combat_condition",
+                "(combat_calcs.compute_advantage(unit, target, unit.get_weapon(), target.get_weapon(), True).modification > 0) and mode == 'attack'"
+            ],
+            [
+                "give_status_after_hit",
+                "Broken"
+            ],
+            [
+                "nihiled_by",
+                [
+                    "BreakImmune"
+                ]
+            ]
+        ]
+    },
+    {
         "nid": "GreatShove",
         "name": "GreatShove",
-        "desc": "",
+        "desc": "Used for the Greatsword/Greatlance/Greataxe to not shove certain people.",
         "icon_nid": null,
         "icon_index": [
             0,
