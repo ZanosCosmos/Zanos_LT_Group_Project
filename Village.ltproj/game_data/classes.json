@@ -367,16 +367,6 @@
                 0,
                 251
             ],
-            "Staff": [
-                false,
-                0,
-                251
-            ],
-            "Light": [
-                false,
-                0,
-                251
-            ],
             "Anima": [
                 false,
                 0,
@@ -387,7 +377,17 @@
                 0,
                 251
             ],
+            "Light": [
+                false,
+                0,
+                251
+            ],
             "Default": [
+                false,
+                0,
+                251
+            ],
+            "Staff": [
                 false,
                 0,
                 251
@@ -496,16 +496,6 @@
                 0,
                 251
             ],
-            "Staff": [
-                false,
-                0,
-                251
-            ],
-            "Light": [
-                false,
-                0,
-                251
-            ],
             "Anima": [
                 false,
                 0,
@@ -516,7 +506,17 @@
                 0,
                 251
             ],
+            "Light": [
+                false,
+                0,
+                251
+            ],
             "Default": [
+                false,
+                0,
+                251
+            ],
+            "Staff": [
                 false,
                 0,
                 251
@@ -631,16 +631,6 @@
                 0,
                 251
             ],
-            "Staff": [
-                false,
-                0,
-                251
-            ],
-            "Light": [
-                false,
-                0,
-                251
-            ],
             "Anima": [
                 false,
                 0,
@@ -651,7 +641,17 @@
                 0,
                 251
             ],
+            "Light": [
+                false,
+                0,
+                251
+            ],
             "Default": [
+                false,
+                0,
+                251
+            ],
+            "Staff": [
                 false,
                 0,
                 251
@@ -763,16 +763,6 @@
                 0,
                 251
             ],
-            "Staff": [
-                false,
-                0,
-                251
-            ],
-            "Light": [
-                false,
-                0,
-                251
-            ],
             "Anima": [
                 false,
                 0,
@@ -783,7 +773,17 @@
                 0,
                 251
             ],
+            "Light": [
+                false,
+                0,
+                251
+            ],
             "Default": [
+                false,
+                0,
+                251
+            ],
+            "Staff": [
                 false,
                 0,
                 251
@@ -1029,16 +1029,6 @@
                 0,
                 251
             ],
-            "Staff": [
-                false,
-                0,
-                251
-            ],
-            "Light": [
-                false,
-                0,
-                251
-            ],
             "Anima": [
                 false,
                 0,
@@ -1049,7 +1039,17 @@
                 0,
                 251
             ],
+            "Light": [
+                false,
+                0,
+                251
+            ],
             "Default": [
+                false,
+                0,
+                251
+            ],
+            "Staff": [
                 false,
                 0,
                 251
@@ -1166,16 +1166,6 @@
                 0,
                 251
             ],
-            "Staff": [
-                false,
-                0,
-                251
-            ],
-            "Light": [
-                false,
-                0,
-                251
-            ],
             "Anima": [
                 false,
                 0,
@@ -1186,7 +1176,17 @@
                 0,
                 251
             ],
+            "Light": [
+                false,
+                0,
+                251
+            ],
             "Default": [
+                false,
+                0,
+                251
+            ],
+            "Staff": [
                 false,
                 0,
                 251
@@ -1295,16 +1295,6 @@
                 0,
                 251
             ],
-            "Staff": [
-                false,
-                0,
-                251
-            ],
-            "Light": [
-                false,
-                0,
-                251
-            ],
             "Anima": [
                 false,
                 0,
@@ -1315,7 +1305,17 @@
                 0,
                 251
             ],
+            "Light": [
+                false,
+                0,
+                251
+            ],
             "Default": [
+                false,
+                0,
+                251
+            ],
+            "Staff": [
                 false,
                 0,
                 251
@@ -1889,7 +1889,7 @@
             "DEF": 3,
             "RES": 2,
             "CON": 6,
-            "MOV": 5,
+            "MOV": 4,
             "TEC": 0
         },
         "growths": {
@@ -2025,7 +2025,7 @@
             "DEF": 3,
             "RES": 2,
             "CON": 6,
-            "MOV": 5,
+            "MOV": 4,
             "TEC": 0
         },
         "growths": {

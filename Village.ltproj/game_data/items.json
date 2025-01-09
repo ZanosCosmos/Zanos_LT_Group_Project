@@ -60,6 +60,73 @@
         ]
     },
     {
+        "nid": "TrainingSword",
+        "name": "Training Sword",
+        "desc": "2x EXP/WXP gain and +15 Avoid while equipped.",
+        "icon_nid": "ItemIcons3",
+        "icon_index": [
+            5,
+            2
+        ],
+        "components": [
+            [
+                "weapon",
+                null
+            ],
+            [
+                "value",
+                125
+            ],
+            [
+                "target_enemy",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "damage",
+                6
+            ],
+            [
+                "hit",
+                85
+            ],
+            [
+                "crit",
+                0
+            ],
+            [
+                "weight",
+                6
+            ],
+            [
+                "level_exp",
+                null
+            ],
+            [
+                "weapon_type",
+                "Sword"
+            ],
+            [
+                "weapon_rank",
+                "E"
+            ],
+            [
+                "multi_status_on_equip",
+                [
+                    "Plus15Avoid",
+                    "DoubleEXPWXP"
+                ]
+            ]
+        ]
+    },
+    {
         "nid": "Light_Brand",
         "name": "Light Brand",
         "desc": "Magical when attacking from range.",
@@ -8997,7 +9064,7 @@
     {
         "nid": "Vulnerary",
         "name": "Vulnerary",
-        "desc": "Restores 10 HP.",
+        "desc": "Restores 15 HP.",
         "icon_nid": "Consumable",
         "icon_index": [
             0,
@@ -9018,7 +9085,7 @@
             ],
             [
                 "uses",
-                3
+                5
             ],
             [
                 "uses_options",
@@ -9029,7 +9096,7 @@
             ],
             [
                 "heal",
-                10
+                15
             ],
             [
                 "map_hit_add_blend",
@@ -9044,7 +9111,7 @@
     {
         "nid": "Herbs",
         "name": "<yellow>Herbs",
-        "desc": "Restores 5 HP.",
+        "desc": "Restores 10 HP.",
         "icon_nid": "ItemIcons2",
         "icon_index": [
             0,
@@ -9065,7 +9132,7 @@
             ],
             [
                 "heal",
-                5
+                10
             ],
             [
                 "map_hit_add_blend",
@@ -9084,7 +9151,7 @@
                 null
             ],
             [
-                "c_uses",
+                "uses",
                 3
             ],
             [
@@ -9763,6 +9830,26 @@
             [
                 "status_on_equip",
                 "SealDefense"
+            ]
+        ]
+    },
+    {
+        "nid": "CaptainsPendant",
+        "name": "Captain's Pendant",
+        "desc": "Signifies a leader. Enemies will prioritize attacking the holder when possible.",
+        "icon_nid": "ItemIcons3",
+        "icon_index": [
+            11,
+            0
+        ],
+        "components": [
+            [
+                "equippable_accessory",
+                null
+            ],
+            [
+                "status_on_equip",
+                "Provoke"
             ]
         ]
     },
@@ -10586,7 +10673,7 @@
     },
     {
         "nid": "Forage",
-        "name": "Forage",
+        "name": "Forage <red>(10WP)",
         "desc": "Gain Herbs.",
         "icon_nid": "skill_icons",
         "icon_index": [
@@ -10605,6 +10692,10 @@
             [
                 "target_tile",
                 null
+            ],
+            [
+                "mana_cost",
+                10
             ]
         ]
     },
@@ -10905,6 +10996,38 @@
             [
                 "status_on_equip",
                 "BoxingBackground_Effect"
+            ]
+        ]
+    },
+    {
+        "nid": "PlatedHeartItem",
+        "name": "Plated Heart <red>(10WP)",
+        "desc": "Gain +5 Defense/Resistance until upkeep.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            15,
+            22
+        ],
+        "components": [
+            [
+                "min_range",
+                0
+            ],
+            [
+                "max_range",
+                0
+            ],
+            [
+                "self_status_on_hit",
+                "PlatedHeart_Effect"
+            ],
+            [
+                "target_unit",
+                null
+            ],
+            [
+                "mana_cost",
+                10
             ]
         ]
     },

@@ -110,6 +110,70 @@
         ]
     },
     {
+        "nid": "Plus15Avoid",
+        "name": "Plus15Avoid",
+        "desc": "",
+        "icon_nid": null,
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "avoid",
+                15
+            ]
+        ]
+    },
+    {
+        "nid": "DoubleEXPWXP",
+        "name": "DoubleEXPWXP",
+        "desc": "",
+        "icon_nid": null,
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "exp_multiplier",
+                2.0
+            ],
+            [
+                "wexp_multiplier",
+                2.0
+            ]
+        ]
+    },
+    {
+        "nid": "Provoke",
+        "name": "Provoke",
+        "desc": "",
+        "icon_nid": null,
+        "icon_index": [
+            0,
+            0
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "modify_ai_priority",
+                99.0
+            ]
+        ]
+    },
+    {
         "nid": "Stunned",
         "name": "Stunned",
         "desc": "Unit cannot act.",
@@ -644,18 +708,14 @@
     },
     {
         "nid": "Forager",
-        "name": "Forager",
-        "desc": "Use while in Plains or Forests to gain Herbs. Recharges fully every chapter.",
+        "name": "Forager <red>(10WP)",
+        "desc": "Use while in Plains or Forests to gain Herbs.",
         "icon_nid": "skill_icons",
         "icon_index": [
             12,
             43
         ],
         "components": [
-            [
-                "drain_charge",
-                3
-            ],
             [
                 "class_skill",
                 null
@@ -1581,6 +1641,59 @@
         ]
     },
     {
+        "nid": "PlatedHeart",
+        "name": "Plated Heart <red>(10WP)",
+        "desc": "Gain +5 Defense/Resistance until upkeep.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            15,
+            22
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "ability",
+                "PlatedHeartItem"
+            ]
+        ]
+    },
+    {
+        "nid": "PlatedHeart_Effect",
+        "name": "Plated Heart",
+        "desc": "Gain +5 Defense/Resistance until upkeep.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            15,
+            22
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        5
+                    ],
+                    [
+                        "RES",
+                        5
+                    ]
+                ]
+            ],
+            [
+                "lost_on_upkeep",
+                null
+            ]
+        ]
+    },
+    {
         "nid": "WillpowerSystem",
         "name": "WillpowerSystem",
         "desc": "Makes Willpower regenerate correctly.",
@@ -1663,6 +1776,30 @@
             [
                 "combat_condition",
                 "unit2.team not in ('player','other')"
+            ]
+        ]
+    },
+    {
+        "nid": "EvasionDecay",
+        "name": "EvasionDecay",
+        "desc": "Every combat gives -1 Avoid. This is the debuff that does it.",
+        "icon_nid": "skill_icons",
+        "icon_index": [
+            8,
+            11
+        ],
+        "components": [
+            [
+                "avoid",
+                -1
+            ],
+            [
+                "stack",
+                999
+            ],
+            [
+                "hidden",
+                null
             ]
         ]
     },

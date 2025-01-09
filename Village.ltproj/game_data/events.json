@@ -3187,5 +3187,19 @@
             "remove_unit;{unit}"
         ],
         "nid": "Prologue Escape"
+    },
+    {
+        "name": "EvasionDecay",
+        "trigger": "combat_end",
+        "level_nid": null,
+        "condition": "skill_system.check_enemy(unit, unit2)",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            " give_skill;{unit};EvasionDecay;no_banner",
+            " give_skill;{unit2};EvasionDecay;no_banner"
+        ],
+        "nid": "Global EvasionDecay"
     }
 ]

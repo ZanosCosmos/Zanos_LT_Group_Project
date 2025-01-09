@@ -27,7 +27,7 @@
             "SKL": 30,
             "SPD": 30,
             "LCK": 35,
-            "DEF": 10,
+            "DEF": 5,
             "CON": 5,
             "MOV": 1,
             "RES": 25,
@@ -47,7 +47,7 @@
         },
         "starting_items": [
             [
-                "Iron_Sword",
+                "TrainingSword",
                 false
             ],
             [
@@ -141,8 +141,8 @@
             "SPD": 15,
             "LCK": 25,
             "DEF": 40,
-            "CON": 0,
-            "MOV": 0,
+            "CON": 5,
+            "MOV": 1,
             "RES": 5,
             "TEC": 5
         },
@@ -166,12 +166,16 @@
             [
                 "Greataxe",
                 false
+            ],
+            [
+                "CaptainsPendant",
+                false
             ]
         ],
         "learned_skills": [
             [
                 1,
-                "Instructor"
+                "PlatedHeart"
             ]
         ],
         "unit_notes": [],
@@ -255,8 +259,8 @@
             "LCK": 35,
             "DEF": 15,
             "RES": 10,
-            "CON": 0,
-            "MOV": 0,
+            "CON": 10,
+            "MOV": 1,
             "TEC": 10
         },
         "stat_cap_modifiers": {

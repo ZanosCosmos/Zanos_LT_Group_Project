@@ -21,7 +21,7 @@
     },
     {
         "nid": "AVOID",
-        "expression": "LCK*5"
+        "expression": "SPD*2"
     },
     {
         "nid": "CRIT_HIT",

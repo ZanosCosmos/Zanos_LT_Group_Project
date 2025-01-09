@@ -27,7 +27,7 @@
         "nid": "SPD",
         "name": "Spd",
         "maximum": 30,
-        "desc": "If 4 or more than opponent, trigger a follow-up attack.",
+        "desc": "Speed. Each point gives 2 Avoid. If 4 or more than opponent, trigger a follow-up attack.",
         "position": "left",
         "growth_colors": false
     },
@@ -35,7 +35,7 @@
         "nid": "LCK",
         "name": "Lck",
         "maximum": 30,
-        "desc": "Luck. Every point gives 5 Avoid/Dodge.",
+        "desc": "Luck. Every point gives 5 Crit Avoid.",
         "position": "left",
         "growth_colors": false
     },

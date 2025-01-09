@@ -3669,7 +3669,7 @@
                 "generic": true
             },
             {
-                "nid": "Momo",
+                "nid": "Momo_Pro",
                 "team": "other",
                 "ai": "None",
                 "roam_ai": null,
@@ -3728,7 +3728,7 @@
                     3,
                     1
                 ],
-                "sub_nid": "Charge",
+                "sub_nid": "Escape",
                 "condition": "True",
                 "time_left": null,
                 "only_once": false,
@@ -3747,6 +3747,10 @@
             },
             {
                 "nid": "3",
+                "trigger_threshold": 1
+            },
+            {
+                "nid": "",
                 "trigger_threshold": 1
             }
         ]
