@@ -91,6 +91,11 @@
                 0,
                 251
             ],
+            "Dagger": [
+                false,
+                0,
+                null
+            ],
             "Anima": [
                 false,
                 0,
@@ -763,6 +768,11 @@
                 0,
                 251
             ],
+            "Dagger": [
+                false,
+                0,
+                null
+            ],
             "Anima": [
                 false,
                 0,
@@ -823,7 +833,7 @@
             "CON": 8,
             "MOV": 4,
             "RES": 1,
-            "TEC": 0
+            "TEC": 2
         },
         "growths": {
             "HP": 70,
@@ -835,7 +845,7 @@
             "CON": 0,
             "MOV": 0,
             "RES": 20,
-            "TEC": 0
+            "TEC": 5
         },
         "growth_bonus": {
             "HP": 0,
@@ -895,6 +905,11 @@
                 0,
                 251
             ],
+            "Dagger": [
+                false,
+                0,
+                null
+            ],
             "Anima": [
                 false,
                 0,
@@ -927,6 +942,143 @@
             0
         ],
         "map_sprite_nid": "Myrmidon",
+        "combat_anim_nid": "Myrmidon",
+        "fields": []
+    },
+    {
+        "nid": "Myrmidon_F",
+        "name": "Samurai",
+        "desc": "Swordfighters with superior speed and skill.",
+        "tier": 1,
+        "movement_group": "Light Foot",
+        "promotes_from": null,
+        "turns_into": [
+            "Swordmaster",
+            "Assassin"
+        ],
+        "tags": [
+            "Sword"
+        ],
+        "max_level": 20,
+        "bases": {
+            "HP": 16,
+            "STR": 4,
+            "SKL": 8,
+            "SPD": 9,
+            "LCK": 0,
+            "DEF": 0,
+            "CON": 8,
+            "MOV": 4,
+            "RES": 1,
+            "TEC": 2
+        },
+        "growths": {
+            "HP": 70,
+            "STR": 35,
+            "SKL": 40,
+            "SPD": 40,
+            "LCK": 30,
+            "DEF": 15,
+            "CON": 0,
+            "MOV": 0,
+            "RES": 20,
+            "TEC": 5
+        },
+        "growth_bonus": {
+            "HP": 0,
+            "STR": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "CON": 0,
+            "MOV": 0,
+            "RES": 0,
+            "TEC": 0
+        },
+        "promotion": {
+            "HP": 0,
+            "STR": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "LCK": 0,
+            "DEF": 0,
+            "CON": 0,
+            "MOV": 0,
+            "RES": 0,
+            "TEC": 0
+        },
+        "max_stats": {
+            "HP": 60,
+            "STR": 20,
+            "SKL": 20,
+            "SPD": 20,
+            "LCK": 30,
+            "DEF": 20,
+            "CON": 20,
+            "MOV": 15,
+            "RES": 20,
+            "TEC": 30
+        },
+        "learned_skills": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                31,
+                251
+            ],
+            "Lance": [
+                false,
+                0,
+                251
+            ],
+            "Axe": [
+                false,
+                0,
+                251
+            ],
+            "Bow": [
+                false,
+                0,
+                251
+            ],
+            "Dagger": [
+                false,
+                0,
+                null
+            ],
+            "Anima": [
+                false,
+                0,
+                251
+            ],
+            "Dark": [
+                false,
+                0,
+                251
+            ],
+            "Light": [
+                false,
+                0,
+                251
+            ],
+            "Default": [
+                false,
+                0,
+                251
+            ],
+            "Staff": [
+                false,
+                0,
+                251
+            ]
+        },
+        "icon_nid": "Generic_Portrait_Myrmidon",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "MyrmidonFemale",
         "combat_anim_nid": "Myrmidon",
         "fields": []
     },
@@ -1028,6 +1180,11 @@
                 false,
                 0,
                 251
+            ],
+            "Dagger": [
+                false,
+                0,
+                null
             ],
             "Anima": [
                 false,
@@ -1147,8 +1304,8 @@
         ],
         "wexp_gain": {
             "Sword": [
-                true,
-                1,
+                false,
+                0,
                 251
             ],
             "Lance": [
@@ -1165,6 +1322,11 @@
                 false,
                 0,
                 251
+            ],
+            "Dagger": [
+                true,
+                1,
+                null
             ],
             "Anima": [
                 false,
@@ -1294,6 +1456,11 @@
                 false,
                 0,
                 251
+            ],
+            "Dagger": [
+                false,
+                0,
+                null
             ],
             "Anima": [
                 false,
@@ -2503,6 +2670,11 @@
                 0,
                 251
             ],
+            "Dagger": [
+                false,
+                0,
+                null
+            ],
             "Anima": [
                 false,
                 0,
@@ -2631,6 +2803,11 @@
                 false,
                 0,
                 251
+            ],
+            "Dagger": [
+                false,
+                0,
+                null
             ],
             "Anima": [
                 false,

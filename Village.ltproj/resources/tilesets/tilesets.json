@@ -111,5 +111,10 @@
         "nid": "Knights Villagers Bandits 7 (18 00 48 1A)",
         "terrain_grid": {},
         "autotiles": {}
+    },
+    {
+        "nid": "ProVillage",
+        "terrain_grid": {},
+        "autotiles": {}
     }
 ]
